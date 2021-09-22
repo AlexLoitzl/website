@@ -162,11 +162,16 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     <!-- Middle Column for Publications -->
     <div id="pub_column" class="w3-col m9 l7 w3-hide">
       <!-- About me -->
-      <div class="w3-container w3-card w3-white w3-round w3-margin-left w3-margin-right pub-card"><br>
+      <div id="parent" class="w3-container w3-card w3-white w3-round w3-margin-left w3-margin-right pub-card" style="overflow:hidden;"> <br>
         <h4>Publications</h4>
         <hr class="w3-clear">
         <!-- Try Animation-->
-        <img src="data/pb.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
+        <div style="min-height:180px"></div>
+        <div id="wrapper">
+          <div id="child">
+            <img src="data/pb.png" style="height:106px;width:106px" alt="Avatar">
+          </div>
+        </div>
         <!-- End of Animation -->
       </div>
 
