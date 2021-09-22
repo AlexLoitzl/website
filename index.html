@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>Alex' Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Top Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-ripple w3-theme-d4 w3-hover-blue-gray" title="Home"><i class="fa fa-home"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ripple w3-padding-large w3-hover-blue-gray" title="CV"><i class="far fa-clipboard w3-margin-right"></i>CV (PDF)</a>
+  <!--
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+  -->
+ </div>
+</div>
+
+<!-- Top Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Hacky Quick Fix">This should not be here ._.</a>
+  <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
+  <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="CV"><i class="far fa-clipboard w3-margin-right"></i>CV (PDF)</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Alex Loitzl</h4>
+         <p class="w3-center"><img src="pb.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i> CS Student</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Vienna / Salzburg, Austria</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> May 1999</p>
+         <p class="w3-medium-small"><i class="fa fa-at fa-fw w3-margin-right w3-text-theme"></i> alexander (dot) loitzl (at) stud.sbg.ac.at</p>
+        </div>
+      </div>
+      <br>
+
+	  <div class="w3-card w3-round w3-white w3-hide-small w3-margin-bottom">
+        <div class="w3-container">
+          <p>Interests</p> <!-- Interests are listed twice! -->
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Logic</span>
+            <span class="w3-tag w3-small w3-theme-d5">Automata Theory</span>
+            <span class="w3-tag w3-small w3-theme-d3">Model Checking</span>
+            <span class="w3-tag w3-small w3-theme-d1">Coalgebra</span>
+            <span class="w3-tag w3-small w3-theme-d1">Category Theory</span>
+            <span class="w3-tag w3-small w3-theme-l1">Theoretical Computerscience</span>
+            <span class="w3-tag w3-small w3-theme-l3">Compiler Construction</span>
+            <span class="w3-tag w3-small w3-theme-l3">Operating Systems</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Accordion ( Below Profile Card)-->
+      <div class="w3-card w3-round w3-hide-large">
+        <div class="w3-white">
+		  <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align w3-hide-large w3-hide-medium"><i class="fas fa-glasses fa-fw w3-margin-right"></i> Interests </button>
+          <div id="Demo3"class="w3-container w3-hide">
+            <div class="w3-container">
+              <p> <!-- Interests are listed twice! -->
+                <span class="w3-tag w3-small w3-theme-d5">Logic</span>
+                <span class="w3-tag w3-small w3-theme-d5">Automata Theory</span>
+                <span class="w3-tag w3-small w3-theme-d3">Model Checking</span>
+                <span class="w3-tag w3-small w3-theme-d1">Coalgebra</span>
+                <span class="w3-tag w3-small w3-theme-d1">Category Theory</span>
+                <span class="w3-tag w3-small w3-theme-l1">Theoretical Computerscience</span>
+                <span class="w3-tag w3-small w3-theme-l3">Compiler Construction</span>
+                <span class="w3-tag w3-small w3-theme-l3">Operating Systems</span>
+              </p>
+            </div>
+          </div>
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Socials </button>
+          <!-- This exists now for every display mode ._. -->
+		  <div id="Demo1" class="w3-hide w3-container w3-padding-small">
+            <p class="w3-wide w3-center w3-hide-medium">
+              <a href="https://github.com/AlexLoitzl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github w3-text-theme logosPhone"></i></a>
+              <a href="https://open.spotify.com/user/iamv78i2sd1lkprkaky0ql0a6?si=3bb8ccd6f4504b06" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify w3-text-theme logosPhone"></i></a>
+              <a href="https://discordapp.com/users/183701819309031425"  target="_blank" rel="noopener noreferrer"><i class="fab fa-discord w3-text-theme logosPhone"></i></a>
+              <a href="https://www.linkedin.com/in/alexander-loitzl"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin w3-text-theme logosPhone"></i></a>
+            </p>
+            <!-- Display with smaller text on medium screen to prevent wrapping -->
+            <p class="w3-wide w3-center w3-hide-large w3-hide-small">
+              <a href="https://github.com/AlexLoitzl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github w3-text-theme logosMedium"></i></a>
+              <a href="https://open.spotify.com/user/iamv78i2sd1lkprkaky0ql0a6?si=3bb8ccd6f4504b06" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify w3-text-theme logosMedium"></i></a>
+              <a href="https://discordapp.com/users/183701819309031425"  target="_blank" rel="noopener noreferrer"><i class="fab fa-discord w3-text-theme logosMedium"></i></a>
+              <a href="https://www.linkedin.com/in/alexander-loitzl"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin w3-text-theme logosMedium"></i></a>
+            </p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-camera fa-fw w3-margin-right"></i> Gallery </button>
+          <div id="Demo2" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <p> No pictures yet... </p>
+         <!--
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         -->
+         </div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="w3-col m9 l7">
+      <!-- About me -->
+      <div class="w3-card w3-round w3-margin-right w3-margin-left">
+		  <button onclick="myFunction('Demo8')" class="w3-button w3-block w3-left-align w3-large"> About me: <i class="fas fa-chevron-down w3-right" style="margin-top:5px"></i></button>
+          <div id="Demo8"class="w3-container w3-hide w3-white">
+            <div class="w3-container">
+              <p>
+                Boring text
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+
+    <!-- End Middle Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-col l2 w3-hide-medium w3-hide-small">
+<!-- Accordion ( Below Profile Card)-->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('DemoX')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Socials </button>
+          <div id="DemoX" class="w3-hide w3-container w3-padding-small">
+            <p class="w3-wide w3-center w3-hide-medium">
+              <a href="https://github.com/AlexLoitzl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github w3-text-theme logosRight"></i></a>
+              <a href="https://open.spotify.com/user/iamv78i2sd1lkprkaky0ql0a6?si=3bb8ccd6f4504b06" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify w3-text-theme logosRight"></i></a>
+              <a href="https://discordapp.com/users/183701819309031425"  target="_blank" rel="noopener noreferrer"><i class="fab fa-discord w3-text-theme logosRight"></i></a>
+              <a href="https://www.linkedin.com/in/alexander-loitzl"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin w3-text-theme logosRight"></i></a>
+            </p>
+          </div>
+          <button onclick="myFunction('DemoY')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-camera fa-fw w3-margin-right"></i> Gallery </button>
+          <div id="DemoY" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <p> No pictures yet... </p>
+         <!--
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         -->
+         </div>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3">
+  <p class="w3-opacity"> If you come across any visual bugs or have feedback regarding the website feel free to contact me :) </p>
+</footer>
+
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else {
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className =
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
