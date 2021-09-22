@@ -16,33 +16,16 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-ripple w3-theme-d4 w3-hover-blue-gray" title="Home"><i class="fa fa-home"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-ripple w3-theme-d4 w3-hover-blue-gray" title="Home"><i class="fa fa-home"></i></a>
+  <a href="javascript:togglePublication('home_column','pub_column');" class="w3-bar-item w3-button w3-hide-small w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ripple w3-padding-large w3-hover-blue-gray" title="CV"><i class="far fa-clipboard w3-margin-right"></i>CV (PDF)</a>
-  <!--
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-
-  <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-  </a>
-  -->
  </div>
 </div>
 
 <!-- Top Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Hacky Quick Fix">This should not be here ._.</a>
-  <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Hacky Quick Fix">This should not be here ._.</a>
+  <a href="javascript:togglePublicationSmall('home_column','pub_column','left-column');" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="Publications"><i class="fa fa-pencil-alt w3-margin-right"></i> Publications</a>
   <a href="#" class="w3-bar-item w3-button w3-ripple w3-padding-large w3-hover-blue-gray" title="CV"><i class="far fa-clipboard w3-margin-right"></i>CV (PDF)</a>
 </div>
 
@@ -51,12 +34,12 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
-    <div class="w3-col m3">
+    <div id="left-column" class="w3-col m3 w3-show">
       <!-- Profile -->
       <div class="w3-card w3-round w3-white">
         <div class="w3-container">
          <h4 class="w3-center">Alex Loitzl</h4>
-         <p class="w3-center"><img src="pb.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <p class="w3-center"><img src="data/pb.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
          <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i> CS Student</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Vienna / Salzburg, Austria</p>
@@ -151,7 +134,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     </div>
 
     <!-- Middle Column -->
-    <div class="w3-col m9 l7">
+    <div id="home_column" class="w3-col m9 l7 w3-show">
       <!-- About me -->
       <div class="w3-card w3-round w3-margin-right w3-margin-left">
 		  <button onclick="myFunction('Demo8')" class="w3-button w3-block w3-left-align w3-large"> About me: <i class="fas fa-chevron-down w3-right" style="margin-top:5px"></i></button>
@@ -165,47 +148,39 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
       </div>
 
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">1 min</span>
-        <h4>John Doe</h4><br>
+        <span class="w3-right w3-opacity">22.09.2021</span>
+        <h4>Finally done!</h4>
         <hr class="w3-clear">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
-          </div>
-        </div>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">16 min</span>
-        <h4>Jane Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">32 min</span>
-        <h4>Angie Jane</h4><br>
-        <hr class="w3-clear">
-        <p>Have you seen this?</p>
-        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+        <p id="card1_extension" class="w3-hide">Show this only on click</p>
+        <button id="card1_button_down" onclick="toggleCards('card1_extension','card1_button_down','card1_button_up')" class="w3-button w3-theme-d2 w3-margin-bottom w3-right w3-show"><i class="fas fa-chevron-down w3-right" style="margin-top:5px"></i></button>
+        <button id="card1_button_up" onclick="toggleCards('card1_extension','card1_button_up','card1_button_down')" class="w3-button w3-theme-d2 w3-margin-bottom w3-right w3-hide"><i class="fas fa-chevron-up w3-right" style="margin-top:5px"></i></button>
       </div>
 
     <!-- End Middle Column -->
     </div>
+    <!-- Middle Column for Publications -->
+    <div id="pub_column" class="w3-col m9 l7 w3-hide">
+      <!-- About me -->
+      <div class="w3-container w3-card w3-white w3-round w3-margin-left w3-margin-right pub-card"><br>
+        <h4>Publications</h4>
+        <hr class="w3-clear">
+        <!-- Try Animation-->
+        <img src="data/pb.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
+        <!-- End of Animation -->
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4>Theses</h4>
+        <hr class="w3-clear">
+        <p>
+          <h6 style="line-height: 0.5">Bachelor's Thesis</h6>
+          <a href="#" class="w3-margin-left">3-valued Automata</a>
+        </p>
+      </div>
+    </div>
+    <!-- End Publications Middle Column -->
+
 
     <!-- Right Column -->
     <div class="w3-col l2 w3-hide-medium w3-hide-small">
@@ -264,7 +239,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-d3">
-  <p class="w3-opacity"> If you come across any visual bugs or have feedback regarding the website feel free to contact me :) </p>
+  <p class="w3-opacity">
+    If you come across any visual bugs or have feedback regarding the website feel free to contact me :)
+    <button id="footer_button" onclick="topFunction()" class="w3-button w3-ripple w3-right"><i class="fas fa-chevron-up w3-right"></i></button>
+  </p>
 </footer>
 
 <script>
@@ -281,6 +259,32 @@ function myFunction(id) {
   }
 }
 
+function toggleElement(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace("w3-show", "w3-hide");
+  }
+}
+
+function toggleCards(card, button1, button2) {
+  toggleElement(card);
+  toggleElement(button1);
+  toggleElement(button2);
+}
+
+function togglePublication(id1, id2) {
+  toggleElement(id1);
+  toggleElement(id2);
+}
+
+function togglePublicationSmall(id1, id2, id3) {
+  toggleElement(id1);
+  toggleElement(id2);
+  toggleElement(id3);
+}
+
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
   var x = document.getElementById("navDemo");
@@ -290,6 +294,12 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
 
 </body>
