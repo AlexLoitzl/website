@@ -161,16 +161,17 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     </div>
     <!-- Middle Column for Publications -->
     <div id="pub_column" class="w3-col m9 l7 w3-hide">
-      <!-- About me -->
+
       <div id="parent" class="w3-container w3-card w3-white w3-round w3-margin-left w3-margin-right pub-card" style="overflow:hidden;"> <br>
         <h4>Publications</h4>
         <hr class="w3-clear">
         <!-- Try Animation-->
         <div style="min-height:180px"></div>
-        <div id="wrapper">
-          <div id="child">
-            <img src="data/pb.png" style="height:106px;width:106px" alt="Avatar">
+        <div id="wrapper" class="w3-hide-small">
+          <div id="child" class="w3-hide-small">
+            <img src="data/tumbleweed.png" class="w3-hide-small" style="height:106px;width:106px" alt="tumbleweed">
           </div>
+          <span class="dot" class="w3-hide-small"></span>
         </div>
         <!-- End of Animation -->
       </div>
@@ -280,14 +281,23 @@ function toggleCards(card, button1, button2) {
 }
 
 function togglePublication(id1, id2) {
-  toggleElement(id1);
-  toggleElement(id2);
+  var x = document.getElementById(id1);
+  var y = document.getElementById(id2);
+  x.className = x.className.replace("w3-show", "w3-hide");
+  if (y.className.indexOf("w3-show") == -1) {
+    y.className += " w3-show";
+  }
 }
 
 function togglePublicationSmall(id1, id2, id3) {
-  toggleElement(id1);
-  toggleElement(id2);
-  toggleElement(id3);
+  var x = document.getElementById(id1);
+  var y = document.getElementById(id2);
+  var z = document.getElementById(id3);
+  x.className = x.className.replace("w3-show", "w3-hide");
+  z.className = z.className.replace("w3-show", "w3-hide");
+  if (y.className.indexOf("w3-show") == -1) {
+    y.className += " w3-show";
+  }
 }
 
 // Used to toggle the menu on smaller screens when clicking on the menu button
