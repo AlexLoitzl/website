@@ -1,7 +1,7 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; height: calc(100% - 80px);}body{margin:0; height:100%;}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
@@ -269,16 +269,16 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 
   @keyframes dot {
-        0%   { transform: scale(1,1)    }
-        6%   { transform: scale(1,1)    }
-        8%   { transform: scale(1,1)    }
-        28%  { transform: scale(.5,.5)  }
-        30%  { transform: scale(.5,.5)  }
-        50%  { transform: scale(1,1)   }
-        70%  { transform: scale(.5,.5) }
-        72%  { transform: scale(.5,.5) }
-        92%  { transform: scale(1,1)   }
-        100% { transform: scale(.5,.5) opacity:0; }
+        0%   { transform: scale(1.2,1.2)    }
+        6%   { transform: scale(1.2,1.2)    }
+        8%   { transform: scale(1.2,1.2)    }
+        28%  { transform: scale(.8,.8)  }
+        30%  { transform: scale(.8,.8)  }
+        50%  { transform: scale(1.2,1.2)   }
+        70%  { transform: scale(.8,.8) }
+        72%  { transform: scale(.8,.8) }
+        92%  { transform: scale(1.2,1.2)   }
+        100% { transform: scale(.8,.8) opacity:0; }
     }
 
 #wrapper {
