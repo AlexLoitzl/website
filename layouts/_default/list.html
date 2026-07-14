@@ -95,7 +95,7 @@
         {{- end }}
   {{- end }}
   {{- if .Params.ratingtext }}
-  <div class="entry-rating-text">{{ .Params.ratingtext }}</div>
+  <div class="entry-rating-text">{{ .Params.ratingtext | markdownify }}</div>
   {{- end }}
   </div>
   {{- end }}

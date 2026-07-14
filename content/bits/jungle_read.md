@@ -9,5 +9,5 @@ DateFormat: "Jan 02, 2006"
 hideAuthor: true
 noLink: true
 rating: 4
-ratingText: "We follow Jurgis, a poor, optimistic immigrant whose spirit is gradually ground down by relentless oppression and exploitation in Chicago's Meat Industry of the early 20th century. Sinclair is at his best showing how suffering forces bad decisions that spiral into deeper suffering. The lengthy socialist speeches of the later chapters feel unnecessary; the story has already made the case."
+ratingText: "I really enjoyed this book, which has been on my reading list for a long time. The book depicts the real downward spiral of oppression and suffering, rather than a *hero* overcoming it. The later socialist speeches turn polemical, the story has already made the case."
 ---

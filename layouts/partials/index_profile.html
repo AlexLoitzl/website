@@ -74,7 +74,7 @@
             <a href="{{ .doi }}" target="_blank">DOI</a>
         {{- end }}
         {{- if .local }}
-            | <a href="{{ .local }}">Local Copy</a>
+            | <a href="{{ .local | absURL }}">Local Copy</a>
         {{- end }}
         </li>
         {{- end }}

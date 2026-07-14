@@ -5,7 +5,7 @@
   year: 2024
   doi: "https://doi.org/10.1007/978-3-031-76554-4_8"
   highlight: "Runner-up: Best Paper"
-  local: "/compcertp"
+  local: "compcertp"
 
 - title: "Supporting Register Pairs in CompCert"
   type: "Master's Thesis"
