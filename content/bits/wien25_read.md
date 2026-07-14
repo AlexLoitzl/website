@@ -9,5 +9,5 @@ DateFormat: "Jan 02, 2006"
 hideAuthor: true
 noLink: true
 rating: 4
-ratingText: "I got this book for free as part of Vienna's [Eine Stadt. Ein Buch](https://echoevent.at/eseb/) campaign. It tells the beautiful story of the author's experience with his father's dementia, finding peace and joy in small moments."
+ratingText: "I got this book for free as part of Vienna's [\"Eine Stadt. Ein Buch\"](https://echoevent.at/eseb/) campaign. It tells the beautiful story of the author's experience with his father's dementia, finding peace and joy in small moments."
 ---
