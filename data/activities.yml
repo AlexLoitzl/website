@@ -1,3 +1,11 @@
+- title: "Multi-language Program Logics"
+  type: "Talk"
+  authors: "Loitzl A."
+  place: "Iris Workshop"
+  year: 2026
+  local: "iris26.pdf"
+  localname: "Slides (Adapted for copyright reasons)"
+
 - title: "Modelling Register Pairs in CompCert"
   type: "Conference Paper"
   authors: "Loitzl A., Zuleger F."
