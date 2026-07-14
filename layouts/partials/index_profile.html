@@ -55,11 +55,11 @@
         {{- end }}
 
     <!-- Here, I render the list of activities -->
-    {{- if site.Data.activities }}
+    {{- if hugo.Data.activities }}
     <div class="activities-list" style="margin-top: 2rem;">
     <h2>Research Activities</h2>
     <ul style="list-style: none; padding: .5rem 0pt 0pt .3rem;">
-        {{- range site.Data.activities }}
+        {{- range hugo.Data.activities }}
 
         <li style="margin-bottom: 0.75rem;">
         <div style="margin-bottom: .1rem">
