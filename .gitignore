@@ -12,4 +12,5 @@ resources/
 *.out
 *.run.xml
 cv/*.pdf
-
+# Markdown files from ox-hugo
+content/
