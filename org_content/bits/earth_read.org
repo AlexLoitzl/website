@@ -1,0 +1,15 @@
+#+title: 📚 Recent Read: Earth for all — Dixson-Declève Sandrine et al. (2022)
+
+#+hugo_base_dir: ~/git/website
+#+hugo_section: bits
+#+hugo_front_matter_format: yaml
+
+#+date: 2026-08-07
+#+hugo_tags: book
+#+description: Review of Earth for all by Dixson-Declève Sandrine, Gaffny Owen, Ghosh Jayati, Randers Jørgen, Rockström Johan, and Espen Stoknes Per.
+#+hugo_custom_front_matter: :summary <i>Humanity has commandeered about half of this habitable land for farming, and we have modified or interfered with much of the rest in some way. For livestock production alone, we use an area of land equivalent to North and South America combined. In the ocean, around 90% of fish stocks are either overexploited or fully exploited. A rapidly growing aquaculture sector is taking up more coastal space each year. When it comes to the air, about 70% of birds by mass are farmed poultry, and the rest wild. We live on a planet of chickens.</i>
+#+hugo_custom_front_matter: :DateFormat Jan 02, 2006
+#+hugo_custom_front_matter: :hideAuthor true
+#+hugo_custom_front_matter: :noLink true
+#+hugo_custom_front_matter: :rating 3
+#+hugo_custom_front_matter: :ratingText The book covers two scenarios of possible futures from the [Earth4All model](https://earth4all.life): *Too Little Too Late*, a future in which current trends continue, and *Giant Leap*, a possible future if we take action now. The book is a stimulating read, but depressing (hence only 3 stars) to see how little progress we've made, and how current conflicts and the climate crisis have only accelerated.
