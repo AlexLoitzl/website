@@ -4,7 +4,7 @@ description: "Review of Wie konnte das geschehen? Deutschland 1933 bis 1945 by G
 date: 2026-07-29
 tags: ["book"]
 draft: false
-summary: "<i>Ohne Frage arbeitete Hitlers Regierung mit politischen Techniken, die — in milderer Form — weiterhin in Gebrauch sind: die Manipulation von Informationen, die Zerstörung öffentlicher Räume, in denen gesellschaftliche Angelegenheiten frei diskutiert weden können; die Politik undgedeckter Staatsschulden; soziale Geschenke an die Massen bei zunehmend autoritärer Staatsführung; das Entfachen von Vorurteilen und Hass gegen geeignete und klar erkennbare Minderheiten, generalverdächtige Personen und Insitutionen.</i>"
+summary: "<i>Ohne Frage arbeitete Hitlers Regierung mit politischen Techniken, die — in milderer Form — weiterhin in Gebrauch sind: die Manipulation von Informationen, die Zerstörung öffentlicher Räume, in denen gesellschaftliche Angelegenheiten frei diskutiert weden können; die Politik undgedeckter Staatsschulden; soziale Geschenke an die Massen bei zunehmend autoritärer Staatsführung; das Entfachen von Vorurteilen und Hass gegen geeignete und klar erkennbare Minderheiten, generalverdächtige Personen und Institutionen.</i>"
 DateFormat: "Jan 02, 2006"
 hideAuthor: true
 noLink: true
