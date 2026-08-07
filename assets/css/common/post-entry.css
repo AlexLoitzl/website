@@ -76,11 +76,11 @@
 }
 
 /* Render the links in the post summary */
-.entry-content a {
+.entry-content a, .entry-rating-text a {
     color: var(--darkcolor);
 }
 
-.entry-content a:hover {
+.entry-content a:hover, .entry-rating-text a:hover {
     text-decoration: underline;
 }
 
