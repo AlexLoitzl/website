@@ -22,6 +22,7 @@
     --lightcolor:     rgb(70, 134, 70); /* pale green tint — link hover/tint */
     --highlight:      rgb(237, 160, 29); /* beak yellow — highlights */
     --body_second:    rgb(116,83,70);
+    --heading_second: rgb(116,83,70);
 
     --semibold: 500;
     --homesize: 16px;
@@ -52,6 +53,7 @@
     --lightcolor:     rgb(28, 62, 56);    /* #1C3E38 — dark teal tint — link hover */
     --highlight:      rgb(212, 184, 0);   /* #D4B800 — yellow beak — highlights */
     --body_second:    rgb(122, 110, 98);  /* #7A6E62 — grey-brown — meta text */
+    --heading_second: rgb(176, 166, 156);
 
 
     --semibold: 500;
