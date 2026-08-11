@@ -1,0 +1,83 @@
+#+title: Dumb Phone, Happy Life
+
+#+hugo_base_dir: ~/git/website
+#+hugo_section: blog
+#+hugo_front_matter_format: yaml
+
+#+date: 2026-08-09
+#+hugo_custom_front_matter: :url dumbphone
+#+hugo_tags: dumphone
+#+description: <Post description for search engines (less than 155 characters)>
+#+hugo_custom_front_matter: :summary Post summary for list page (less than 265 characters)
+#+hugo_custom_front_matter: :DateFormat Jan 02, 2006
+#+hugo_custom_front_matter: :hideAuthor true
+
+# TODO: summary and search engine
+
+I've developed an aversion towards my phone (and more generally my online behavior) some time after life returned back to normal after the covid lockdowns.
+I started taking back control using browser extensions like /leechblock/ and /distraction free youtube/, but the real turning point was when, inspired by [[https://mehretbiruk.com][spending time offline]], I participated in the [[https://www.globaldayofunplugging.org][Global Day of Unplugging]] 2024.
+I printed train tickets (although the ticket is technically only valid on a phone) and went to an exhibit at [[https://voelklinger-huette.org][Völklinger Hütte]] near Saarbrücken, Germany.
+I still remember how strange it felt to leave my phone at home, a feeling which convinced me that it is time to break free and start using a /dumb phone/.
+
+I have now been using a dumbed down smartphone, sometimes more, sometimes less successfully for the last two years. Recently, I had to switch from [[https://lineageos.org][LineageOS]] to [[https://e.foundation.org][e/os]], as LineageOS dropped support for my phone, and I am taking this as an opportunity to finally share my process. This post is not necessarily a tutorial, but rather gives some insights into my setup and includes some learnings I have made along the way.
+
+* My Requirements
+Everyone's motivation to go down the dumbphone path and their requirements are different. The most important first step is to have a clear idea of the key features one requires in day-to-day life, and what features of a phone you want to get rid of.
+My main motivation was a simple budget friendly way to reduce my phone use and be more present by reducing reasons to look at my phone. More concretely:
+- No addictive apps: No social media apps, news, browser etc.
+- Basic features I rely on: Messaging apps, camera, navigation. Other nice to haves: 2FA, Banking, Email.
+- My single phone: I don't want to worry about carryig/charging two devices.
+- It should be cheap
+
+I quickly realized that going full dumb phone would require me to have a second phone, and feature phones can be quite pricey while I still might not get everything to run that I need. The way forward was to find a way to irreversibly restrict my current smartphone.
+
+* Dumbing down my phone
+There are many easy steps to dumb down your phone. Minimal launchers, app timers, screen time goals etc... But, knowing myself, I need something that allows for no loopholes.
+I've settled on using [[https://developer.android.com/tools/adb][android debug bridge]] (adb), which provides a root-free solution to (temporarily) remove apps using a computer, making it irreversible from the phone, but leaving the option to re-enable apps for travel.
+
+** Degoogling (Optional)
+One, sometimes unnoticed, benefit of switching to a dumb phone is that you'll be less trackable. Hence, I decided to /degoogle/ my phone by installing an open operating systems. Initially, I used LineageOS and have recently switched to e/os, since Lineage dropped support for my phone.
+
+A welcome side effect of this part of my digital reductionist journey is that it allows using an open os is that I can continue getting security updates for my now 8 year old phone (Samsung Galaxy S9+).
+
+** Setup
+Eventually, there won't be any access to a browser or app store on the phone, hence, the first step is to install all required apps and login, as some require a browser to handle the login. Next, is to remove all unwanted apps.
+
+** Remove Unwanted Apps
+Using adb we can disable and re-enable apps with a computer, without requiring any root access, including system apps. Crucially, for system apps this approach is less convenient, but still works.
+
+*** System Apps:
+For pre-installed system apps, e.g. for the browser and app store, use the following command:
+#+begin_src bash
+adb shell pm uninstall --user 0 <packagename>
+#+end_src
+The package name of an app can be looked up in the phone settings or for a full list using adb use ~adb shell pm list packages~.
+
+Note, that these commands uninstall the applications only for the default user 0 as a systemwide uninstall requires root permissions.
+
+They can be easily re-installed:
+#+begin_src bash
+adb shell pm install-existing <packagename>
+#+end_src
+
+Note however, that setting may not persist. If that is wanted, you can fall back to f-droid, aurora store, and any browser.
+
+*** User Apps
+For user-installed apps, e.g., a browser or alternative app store, use disable:
+#+begin_src bash
+adb shell pm disable-user --user 0 <packagename>
+#+end_src
+And to re-enable use:
+#+begin_src bash
+adb shell pm enable <packagename>
+#+end_src
+
+After disabling browser and app store, it's not possible to change the state of your phone.
+
+* Notes, Tips and Tricks
+Below I list some general tips, settings and observations I've made since running this setup.
+- I permanently use /Do Not Disturb/ mode with exceptions for calls, as I don't get many and they are usually important. Also, some of my friends know this and can ping me if it's urgent
+- I disabled all notifications on the lock screen, i.e., they only appear after unlocking the device. Quickly checking the time doesn't lead to something... Nice sideeffect, if notifications of end-to-end encrypted messaging apps contain the message body, they can be [[https://www.404media.co/fbi-extracts-suspects-deleted-signal-messages-saved-in-iphone-notification-database-2/][recovered from your phone]].
+- Some time ago WhatsApp introduced MetaAi. So, if you use WhatsApp, there seems to be no way around having an AI chatbot making your phone smarter
+- Try to reduce reasons to use your phone. I've started wearing a (dumb) watch again and went back to using an Ipod for music. Next, I'll get a yubikey to stop relying on 2FA on my phone.
+- An annoying part of no browser is that I often can't look at things other people are sending me. I tried using a kiosk browser, which has no functionality like search, but can open links... The obvious caveat, is that you could just open a link to duckduckgo and search away
