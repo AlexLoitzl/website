@@ -4,7 +4,7 @@
 #+hugo_section: blog
 #+hugo_front_matter_format: yaml
 
-#+date: 2026-08-09
+#+date: 2026-08-31
 #+hugo_custom_front_matter: :url dumbphone
 #+hugo_tags: dumphone
 #+description: <Post description for search engines (less than 155 characters)>
@@ -19,7 +19,7 @@ I started taking back control using browser extensions like /leechblock/ and /di
 I printed train tickets (although the ticket is technically only valid on a phone) and went to an exhibit at [[https://voelklinger-huette.org][Völklinger Hütte]] near Saarbrücken, Germany.
 I still remember how strange it felt to leave my phone at home, a feeling which convinced me that it is time to break free and start using a /dumb phone/.
 
-I have now been using a dumbed down smartphone, sometimes more, sometimes less successfully for the last two years. Recently, I had to switch from [[https://lineageos.org][LineageOS]] to [[https://e.foundation.org][e/os]], as LineageOS dropped support for my phone, and I am taking this as an opportunity to finally share my process. This post is not necessarily a tutorial, but rather gives some insights into my setup and includes some learnings I have made along the way.
+I have now been using a dumbed down smartphone, sometimes less, sometimes more successfully for the last two years. Recently, I had to switch from [[https://lineageos.org][LineageOS]] to [[https://e.foundation.org][e/os]], as LineageOS dropped support for my phone, and I took it as an opportunity to finally share my setup. This post is not necessarily a tutorial, but rather gives some insights into my setup and includes some learnings I have made along the way.
 
 * My Requirements
 Everyone's motivation to go down the dumbphone path and their requirements are different. The most important first step is to have a clear idea of the key features one requires in day-to-day life, and what features of a phone you want to get rid of.
@@ -51,7 +51,7 @@ For pre-installed system apps, e.g. for the browser and app store, use the follo
 #+begin_src bash
 adb shell pm uninstall --user 0 <packagename>
 #+end_src
-The package name of an app can be looked up in the phone settings or for a full list using adb use ~adb shell pm list packages~.
+The package name of an app can be looked up in the phone settings or run ~adb shell pm list packages~ to display a list of all packages.
 
 Note, that these commands uninstall the applications only for the default user 0 as a systemwide uninstall requires root permissions.
 
@@ -75,9 +75,9 @@ adb shell pm enable <packagename>
 After disabling browser and app store, it's not possible to change the state of your phone.
 
 * Notes, Tips and Tricks
-Below I list some general tips, settings and observations I've made since running this setup.
-- I permanently use /Do Not Disturb/ mode with exceptions for calls, as I don't get many and they are usually important. Also, some of my friends know this and can ping me if it's urgent
-- I disabled all notifications on the lock screen, i.e., they only appear after unlocking the device. Quickly checking the time doesn't lead to something... Nice sideeffect, if notifications of end-to-end encrypted messaging apps contain the message body, they can be [[https://www.404media.co/fbi-extracts-suspects-deleted-signal-messages-saved-in-iphone-notification-database-2/][recovered from your phone]].
-- Some time ago WhatsApp introduced MetaAi. So, if you use WhatsApp, there seems to be no way around having an AI chatbot making your phone smarter
-- Try to reduce reasons to use your phone. I've started wearing a (dumb) watch again and went back to using an Ipod for music. Next, I'll get a yubikey to stop relying on 2FA on my phone.
-- An annoying part of no browser is that I often can't look at things other people are sending me. I tried using a kiosk browser, which has no functionality like search, but can open links... The obvious caveat, is that you could just open a link to duckduckgo and search away
+Below I list some general tips, settings and observations I've made since running my setup.
+- I permanently use /Do Not Disturb/ mode with exceptions for calls, as I don't get many and they are usually important. Also, some of my friends know this and can ping me if it's urgent.
+- I disabled all notifications on the lock screen, i.e., they only appear after unlocking the device. This avoids that quickly checking the time turns into an avalanche of things to take care of. This also comes with a privacy boost as notifications containing the body of end-to-end encrypted messages [[https://www.404media.co/fbi-extracts-suspects-deleted-signal-messages-saved-in-iphone-notification-database-2/][render the encryption useless]].
+- Some time ago WhatsApp includes a MetaAi button, so, if you're using WhatsApp, there seems to be no way around having access to an AI chatbot on your phone.
+- Having no browser also means you can't open links etc. that other people send you. If this is important to you, try a /kiosk browser/, a reduced browser with no search functionality. The obvious caveat: you can just type out links and open them yourself, e.g. to duckduckgo.
+- Since you continue using the same physical device, it's harder to rid yourself of the habit of picking up your phone expecting to be entertained. For me, it was important to reduce reasons to use my phone and have it in my pocket all the time. I've started wearing a (dumb) watch and went back to using an Ipod for listening to music.
