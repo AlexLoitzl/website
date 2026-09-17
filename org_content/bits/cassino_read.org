@@ -1,0 +1,15 @@
+#+title: 📚 Recent Read: The Battles for Cassino — E. D. Smith (1975)
+
+#+hugo_base_dir: ~/git/website
+#+hugo_section: bits
+#+hugo_front_matter_format: yaml
+
+#+date: 2026-08-19
+#+hugo_tags: book
+#+description: Review of The Battles for Cassino by E. D. Smith.
+#+hugo_custom_front_matter: :summary <i>The book asks why the battles [at Monte Cassino], in which thousands of lives were lost, were fought, and discusses whether there can be any justification for them.</i>
+#+hugo_custom_front_matter: :DateFormat Jan 02, 2006
+#+hugo_custom_front_matter: :hideAuthor true
+#+hugo_custom_front_matter: :noLink true
+#+hugo_custom_front_matter: :rating 3
+#+hugo_custom_front_matter: :ratingText I read this book as it came up in the Monuments Men book. It's mostly quite dry descriptions of troop movements and I probably should have gotten out a detailed map to follow along. I did enjoy the detailed description of the decision making process and how it was impacted by the broade context of the Allied Italian campaign, which was itself a sideshow to the offensive in France.

@@ -1,0 +1,15 @@
+#+title: 📚 Recent Read: The Monuments Men — Robert M. Edsel (2009)
+
+#+hugo_base_dir: ~/git/website
+#+hugo_section: bits
+#+hugo_front_matter_format: yaml
+
+#+date: 2026-08-13
+#+hugo_tags: book
+#+description: Review of The Monuments Men by Robert M. Edsel with Bret Witter.
+#+hugo_custom_front_matter: :summary <i>The void of April to May 1945 was a period where past deeds could quickly be buried or mischaracterized, and today’s lie could become tomorrow’s truth.</br>Those who stepped forward, . . ., could not only save their own necks, but become invaluable to the Allied conquerors.</i>
+#+hugo_custom_front_matter: :DateFormat Jan 02, 2006
+#+hugo_custom_front_matter: :hideAuthor true
+#+hugo_custom_front_matter: :noLink true
+#+hugo_custom_front_matter: :rating 3
+#+hugo_custom_front_matter: :ratingText The book stands out in that it interleaves descriptions of historical events with segments of imaginary conversations and actions, supposedly reflecting the sentiments of the protaginists expressed in letters to their loved ones. I'm taking it as a bad sign that I am appalled by the description of the one place appearing in the book that I know well: Altaussee.
