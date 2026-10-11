@@ -1,0 +1,15 @@
+#+title: 📚 Recent Read: World's End — Upton Sinclair (1940)
+
+#+hugo_base_dir: ~/git/website
+#+hugo_section: bits
+#+hugo_front_matter_format: yaml
+
+#+date: 2026-09-23
+#+hugo_tags: book
+#+description: Review of World's End by Upton Sinclair.
+#+hugo_custom_front_matter: :summary <i>History has forewarned you, Robbie Budd, but you won’t learn. The French Revolution told you that the days of divine right were over; but you’ve built a new system exactly like the old one in its practical results—blind squandering at the top, starvation and despair at the bottom, an insanity of greed ending in mass slaughter. Now you see the Russian revolt, but you scorn to learn from it!</i>
+#+hugo_custom_front_matter: :DateFormat Jan 02, 2006
+#+hugo_custom_front_matter: :hideAuthor true
+#+hugo_custom_front_matter: :noLink true
+#+hugo_custom_front_matter: :rating 5
+#+hugo_custom_front_matter: :ratingText In this first book of the Lanny Budd series we get to see the events of the early 20th century unfold through the naive eyes of Lanny. As a reader, you slowly get disillusioned together with him, though it's good to keep Sinclair's political agenda in mind. I'm reading the series in tandem with Ian Kershaw's <i>To Hell and Back</i> for the bigger historical picture.
