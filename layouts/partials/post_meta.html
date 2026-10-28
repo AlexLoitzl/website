@@ -13,8 +13,13 @@
 {{- end }}
 
 {{- if not (.Param "hideAuthor") -}}
+{{- /* Link coauthors only on the publication page itself, not in lists */ -}}
+{{- if and (eq .Section "publications") (eq page .) .Params.author }}
+{{- $scratch.Add "meta" (slice (partial "people.html" (dict "names" .Params.author "sep" ",&thinsp;"))) }}
+{{- else }}
 {{- with (partial "author.html" .) }}
 {{- $scratch.Add "meta" (slice .) }}
+{{- end }}
 {{- end }}
 {{- end }}
 

@@ -1,6 +1,6 @@
 - title: "Multi-language Program Logics"
   type: "Talk"
-  authors: "Loitzl A."
+  authors: ["Alexander Loitzl"]
   place: "Iris Workshop"
   year: 2026
   local: "iris26.pdf"
@@ -8,7 +8,7 @@
 
 - title: "Modelling Register Pairs in CompCert"
   type: "Conference Paper"
-  authors: "Loitzl A., Zuleger F."
+  authors: ["Alexander Loitzl", "Florian Zuleger"]
   place: "IFM 24"
   year: 2024
   doi: "https://doi.org/10.1007/978-3-031-76554-4_8"
@@ -17,7 +17,7 @@
 
 - title: "Supporting Register Pairs in CompCert"
   type: "Master's Thesis"
-  authors: "Loitzl A."
+  authors: ["Alexander Loitzl"]
   place: "TU Wien"
   year: 2024
   doi: "https://doi.org/10.34726/hss.2024.120444"

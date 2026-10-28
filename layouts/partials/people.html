@@ -1,0 +1,15 @@
+{{- /* Renders a list of people, linking those with a url in data/people.yml.
+       Args: names (list), short (bool, use short form), sep (separator) */ -}}
+{{- $people := hugo.Data.people -}}
+{{- $out := slice -}}
+{{- range .names -}}
+  {{- $p := index $people . -}}
+  {{- $label := . -}}
+  {{- if and $.short $p $p.short }}{{ $label = $p.short }}{{ end -}}
+  {{- if and $p $p.url -}}
+    {{- $out = $out | append (printf `<a class="person-link" href="%s" target="_blank">%s</a>` $p.url $label) -}}
+  {{- else -}}
+    {{- $out = $out | append $label -}}
+  {{- end -}}
+{{- end -}}
+{{- delimit $out (.sep | default ", ") | safeHTML -}}
